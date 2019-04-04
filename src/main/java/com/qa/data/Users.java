@@ -8,7 +8,16 @@ public class Users {
 	String job;
 	String id;
 	String createdAt;
+	String updatedAt;
 	
+	public String getUpdatedAt() {
+		return updatedAt;
+	}
+
+	public void setUpdatedAt(String updatedAt) {
+		this.updatedAt = updatedAt;
+	}
+
 	public String getId() {
 		return id;
 	}

@@ -48,7 +48,7 @@ public class GetTest extends TestBase{
 				System.out.println("status code is "+ statucode);
 				Assert.assertEquals(statucode, RESPONSE_STATUS_CODE_200);
 				
-				//2. get the entire response.
+				//2. get the entire response and convert into JSON.
 				String responseString=EntityUtils.toString(closablehhtpResponse.getEntity(), "UTF-8");
 				JSONObject getJsonResponse=new JSONObject(responseString);
 				System.out.println("get method response is "+ getJsonResponse);
